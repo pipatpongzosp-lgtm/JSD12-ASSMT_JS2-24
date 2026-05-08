@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 * {
   margin: 0;
   padding: 0;
@@ -36,4 +36,119 @@ nav {
 
 #image {
   padding: 2rem;
+} */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #eaeaea;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.button-group {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn.active {
+  border: 2px solid #5a5a5a;
+  background-color: #e0e0e0;
+}
+
+.btn-primary {
+  background-color: #4b6bfb;
+  color: white;
+  border: none;
+}
+
+.form-section {
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.delete-text {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Owner Page Styles */
+.owner-page {
+  text-align: center;
+  padding: 40px;
+}
+.avatar-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  border: 1px solid #999;
 }
