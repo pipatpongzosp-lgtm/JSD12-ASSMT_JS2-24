@@ -1,9 +1,9 @@
-/* @import "tailwindcss";
+@import "tailwindcss";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #e3e4e5;
+ 
 }
 nav {
   background-color: #e3e4e5;
@@ -12,7 +12,7 @@ nav {
   border-left: #e3e4e5;
   border-right: #e3e4e5;
   border-width: 4px;
-  text-align: end;
+  
 }
 #navbox {
   color: black;
@@ -23,7 +23,6 @@ nav {
 #layoutowner{
   display: flex;
   justify-content: center;
-  padding: ;
   
 }
 
@@ -46,7 +45,7 @@ body {
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #eaeaea;
+  
   min-height: 100vh;
 }
 
@@ -55,7 +54,7 @@ body {
   justify-content: flex-end;
   gap: 20px;
   padding: 20px;
-  background-color: #f5f5f5;
+
   border-bottom: 2px solid #ccc;
 }
 

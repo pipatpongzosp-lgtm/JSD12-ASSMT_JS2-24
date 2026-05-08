@@ -22,11 +22,12 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
+import Hero from'./components/Hero';
 // URL จาก API Specification ที่ให้มา
 const API_URL = 'https://67eca027aa794fb3222e43e2.mockapi.io/members';
 
 export default function Home() {
-  <Navbar/>
+ 
   const [sector, setSector] = useState(''); // '' (เริ่มต้น) | 'user' | 'admin'
   const [members, setMembers] = useState([]);
   const [formData, setFormData] = useState({ name: '', lastName: '', position: '' });
@@ -90,6 +91,11 @@ export default function Home() {
 
 
   return (
+    <>
+  
+     <Navbar/>
+     <Hero />
+
     <div className="content">
       <h1>{getTitle()}</h1>
       
@@ -154,5 +160,6 @@ export default function Home() {
         </div>
       )}
     </div>
+    </>
   );
 }
