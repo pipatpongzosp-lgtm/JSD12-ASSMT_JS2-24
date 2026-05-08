@@ -1,8 +1,19 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
   return (
-    <nav id="nav"className="bg-amber-800 ">
-      <a href="">Home</a>
-      <a href="">Owner</a>
-    </nav>
+    <header>
+      <nav className="bg-amber-800f flex flex-col ">
+        <ul id="navbox">
+          <li>
+            <NavLink to="/">Home</NavLink>
+           
+          </li>
+          <li>
+            <NavLink to="/owner">Owner</NavLink>
+           </li>
+        </ul>
+      </nav>
+    </header>
   );
 }

@@ -1,24 +1,39 @@
 @import "tailwindcss";
 * {
-  margin:0 ;
-  padding:0 ;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-color:#E3E4E5
-
+  background-color: #e3e4e5;
 }
 nav {
-  background-color:#E3E4E5 ;
+  background-color: #e3e4e5;
   padding: 2rem;
   border-top: black;
-  border-left:#E3E4E5  ;
-  border-right:#E3E4E5  ;
+  border-left: #e3e4e5;
+  border-right: #e3e4e5;
   border-width: 4px;
   text-align: end;
 }
-nav a {
-  color:black;
+#navbox {
+  color: black;
   font-weight: 500;
   font-size: medium;
   margin: 0 1rem;
 }
+#layoutowner{
+  display: flex;
+  justify-content: center;
+  padding: ;
+  
+}
 
+#about{
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  
+}
+
+#image {
+  padding: 2rem;
+}

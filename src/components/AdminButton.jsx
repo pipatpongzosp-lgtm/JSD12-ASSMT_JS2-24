@@ -7,7 +7,7 @@ function AdminButton() {
   return (
     <div>
       <button onClick={<TableData/>}>
-        User Home Section
+        Admin Home Section
       </button>
     </div>
   )

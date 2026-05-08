@@ -1,19 +1,19 @@
-
-import './App.css'
-import AdminButton from './components/AdminButton'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-
-function App() {
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
+import Owner from "./components/Owner";
+import Home from "./Home";
 
 
-  return (
-    <>
-     <Navbar />
-     <Hero/>
-     <AdminButton/>
-    </>
-  )
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/owner",
+    element: <Owner />,
+  },
+]);
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App
